@@ -17,6 +17,7 @@ public class ShoppingCartPage extends PageBaseShop {
     private final String SPAN_TOTAL_CSS_SELECTOR = "#cart_summary > tfoot > tr:nth-child(7) > td.total_price_container.text-right > span";
     //private final String BUTTON_ADDCANT_CSS_SELECTOR = "#cart_quantity_up_4_16_0_372086 > span > i";
     //private final String BUTTON_PROCEEDCHECKOUT_SUMMARY_CSS_SELECTOR = "#center_column > p.cart_navigation.clearfix > a.button.btn.btn-default.standard-checkout.button-medium";
+    private final String INPUT_CANTARTICULOS_XPATH = "//*/td[5]/input[2]";
 
     //pantalla addresses
     private final String H1_TITLE_ADDRESSES_CSS_SELECTOR = "#center_column > h1";
@@ -44,8 +45,11 @@ public class ShoppingCartPage extends PageBaseShop {
     }
 
     public void cantidadArticulos(String cantidad){
-        setInput("store.input_cantarticulos_summary", cantidad, true);
-        clickElement(By.cssSelector(SPAN_TOTAL_CSS_SELECTOR));
+        //setInput("store.input_cantarticulos_summary", cantidad, true);
+        //clickElement(By.cssSelector(SPAN_TOTAL_CSS_SELECTOR));
+
+       completeField(By.xpath(INPUT_CANTARTICULOS_XPATH), cantidad);
+       clickElement(By.cssSelector(SPAN_TOTAL_CSS_SELECTOR));
     }
 
     public void clickBoton(String boton){

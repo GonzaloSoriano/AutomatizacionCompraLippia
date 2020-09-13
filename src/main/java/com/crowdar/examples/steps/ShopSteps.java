@@ -25,6 +25,7 @@ public class ShopSteps {
             case "Shopping Cart": Injector._page(ShoppingCartPage.class).verificarShoppingCartPage(); break;
             case "Login": Injector._page(LoginPage.class).verificarLoginPage(); break;
             case "My Account": Injector._page(MyAccountPage.class).verificarMyAccount(); break;
+            case "Catalog": Injector._page(CatalogPage.class).verificarCatalog(); break;
             case "Article": Injector._page(ArticlePage.class).verificarProductPage(); break;
             case "Addresses": Injector._page(ShoppingCartPage.class).verificarPantalla(pantalla); break;
             case "Shipping": Injector._page(ShoppingCartPage.class).verificarPantalla(pantalla); break;
@@ -44,6 +45,8 @@ public class ShopSteps {
             case "Terminos y Servicios": Injector._page(ShoppingCartPage.class).clickBoton(boton); break;
             case "Pay by bank wire": Injector._page(ShoppingCartPage.class).clickBoton(boton); break;
             case "I confirm my order": Injector._page(ShoppingCartPage.class).clickBoton(boton); break;
+            case "T-SHIRTS": Injector._page(CatalogPage.class).clickBoton();
+            case "Nombre Articulo": Injector._page(CatalogPage.class).clickItem(); break;
         }
     }
 

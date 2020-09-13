@@ -18,7 +18,6 @@ public class HomePage extends PageBaseShop {
     private final String SLIDER_HOME_ID="slider_row";
 
 
-
     public void go(){ navigateToCompleteURL(); }
 
     public void verificarHome(){

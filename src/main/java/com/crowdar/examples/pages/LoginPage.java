@@ -11,8 +11,6 @@ public class LoginPage extends PageBaseShop {
         this.url = "";
     }
 
-    //private final String INPUT_EMAIL_ID= "email";
-    //private final String INPUT_PASS_ID="passwd";
     private final String BUTTON_SIGNIN_CSS_SELECTOR ="#SubmitLogin";
     private final String H3_TITLE_CSS_SELECTOR= "#login_form > h3";
 
@@ -24,8 +22,6 @@ public class LoginPage extends PageBaseShop {
     public void ingresarDatos(String email, String pass){
         setInput("store.input_mail_id", email, true);
         setInput("store.input_pass_id", pass, true);
-        //completeField(By.id(INPUT_EMAIL_ID), email);
-        //completeField(By.id(INPUT_PASS_ID), pass);
     }
 
     public void clickBotonSignIn(){

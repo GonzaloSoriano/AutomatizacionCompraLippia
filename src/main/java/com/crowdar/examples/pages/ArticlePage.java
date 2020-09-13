@@ -11,10 +11,7 @@ public class ArticlePage extends PageBaseShop {
         this.url = "";
     }
 
-    //private final String BUTTON_ADDTOCART_CSS_SELECTOR = "#add_to_cart > button";
-    //private final String BUTTON_PROCEEDCHECKOUT_CSS_SELECTOR = "#layer_cart > div.clearfix > div.layer_cart_cart.col-xs-12.col-md-6 > div.button-container > a";
     private final String H3_DATASHEET_CSS_SELECTOR = "#center_column > div > section:nth-child(2) > h3";
-    private ShoppingCartPage shoppingCartPage;
 
 
     public void verificarProductPage() {
